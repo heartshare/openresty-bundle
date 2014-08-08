@@ -1,0 +1,6 @@
+[submodule "contrib/ngx_pagespeed"]
+	path = contrib/ngx_pagespeed
+	url = https://github.com/pagespeed/ngx_pagespeed.git
+[submodule "contrib/nginx-length-hiding-filter-module"]
+	path = contrib/nginx-length-hiding-filter-module
+	url = https://github.com/nulab/nginx-length-hiding-filter-module.git

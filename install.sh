@@ -14,8 +14,7 @@ cd ${NGINX_DIR}
   --with-http_spdy_module \
   --with-http_realip_module \
   --with-http_gzip_static_module \
-  --with-http_geoip_module \
-  --add-module=${CONTRIB_DIR}/nginx-length-hiding-filter-module \
+  --add-module="${CONTRIB_DIR}/nginx-length-hiding-filter-module" \
 
 make
 sudo make install

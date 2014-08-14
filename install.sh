@@ -11,7 +11,7 @@ CONTRIB_DIR=${dir}/contrib
 cd ${NGINX_DIR}
 
 ./configure \
-  --prefix=/url/local \
+  --prefix=/usr/local \
   --with-pcre-jit \
   --with-ipv6 \
   --with-http_ssl_module \

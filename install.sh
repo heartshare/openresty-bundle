@@ -18,6 +18,7 @@ cd ${NGINX_DIR}
   --with-http_spdy_module \
   --with-http_realip_module \
   --with-http_gzip_static_module \
+  --add-module="${CONTRIB_DIR}/form-input-nginx-module" \
   --add-module="${CONTRIB_DIR}/nginx-length-hiding-filter-module" \
   -j2
 

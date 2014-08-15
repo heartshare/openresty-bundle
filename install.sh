@@ -5,7 +5,7 @@ echo $dir
 
 apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make
 
-NGINX_DIR=${dir}/ngx_openresty-1.7.2.1
+NGINX_DIR=${dir}/ngx_openresty
 CONTRIB_DIR=${dir}/contrib
 
 cd ${NGINX_DIR}

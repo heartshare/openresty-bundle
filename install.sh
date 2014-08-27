@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 dir=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
-apt-get install -y libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make checkinstall
-
 NGINX_DIR=${dir}/ngx_openresty
 CONTRIB_DIR=${dir}/contrib
 
@@ -24,7 +22,9 @@ auto-apt run ./configure \
   -j2
 
 make
+
 cp ${dir}/description-pak ${NGINX_DIR}/ngx_openresty-1.7.2.1
+
 sudo checkinstall \
   --pkgname='inviqa-nginx' \
   --pkglicense='MIT' \

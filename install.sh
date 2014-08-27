@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 dir=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
-apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make
+apt-get install -y libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make checkinstall
 
 NGINX_DIR=${dir}/ngx_openresty
 CONTRIB_DIR=${dir}/contrib
